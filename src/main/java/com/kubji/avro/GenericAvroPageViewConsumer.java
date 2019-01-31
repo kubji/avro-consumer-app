@@ -50,8 +50,8 @@ import java.util.Properties;
                         + Thread.currentThread().getId());*/
 
                 GenericRecord pageViewRecord = record.value();
-                System.out.println("Receive message: { " + " ip: " + pageViewRecord.get("ip") + ", page: " + pageViewRecord.get("page") + ", time:"
-                        + pageViewRecord.get("time")+ " }, Partition: " + record.partition() + ", Offset: " + record.offset() + ", by ThreadID: "
+                System.out.println("Receive message: { " + " ip: " + pageViewRecord.get("ip") + ", page: " + pageViewRecord.get("page") + ", time: "
+                        + pageViewRecord.get("time") + ", referrer: " + pageViewRecord.get("referrer") + " }, Partition: " + record.partition() + ", Offset: " + record.offset() + ", by ThreadID: "
                         + Thread.currentThread().getId());
             }
         }
