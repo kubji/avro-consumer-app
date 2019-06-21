@@ -114,6 +114,7 @@
                     <subjectPatterns>
                         <param>^pageview-(key|value)$</param>
                     </subjectPatterns>
+                    <subjects>pageview</subjects>
                 </configuration>
             </plugin>
             <plugin>
